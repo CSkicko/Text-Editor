@@ -2,7 +2,12 @@ import { Workbox } from 'workbox-window';
 import Editor from './editor';
 import './database';
 import '../css/style.css';
-import '../images/logo.png';
+import Logo from '../images/logo.png';
+
+document.getElementById("app-logo").src= Logo;
+document.getElementById("app-logo").style.width= '96px';
+document.getElementById("app-logo").style.height= '96px';
+
 
 const main = document.querySelector('#main');
 main.innerHTML = '';
